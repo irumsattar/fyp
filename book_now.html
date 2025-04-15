@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track OnTrack Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+
+<body>
+    <script src="main.js"></script>
+    <!--header-->
+    <header>
+        <a href="index.html" class="logo"><img src="WhatsApp_Image_2024-12-05_at_7.15.50_PM-removebg-preview.png"
+                alt="Track OnTrack Rental"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicle.html">Vehicle</a></li>
+            <li><a href="book_now.html">Booking</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="signup.html" class="sign-up">Sign Up</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+
+    
+    <!--BOOKING FORM-->
+    <section class="booking" id="booking">
+        <div class="booking-container">
+            <h2>Car Rental Booking</h2>
+            <form action="/submit_booking" method="POST" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="cnic">CNIC Number</label>
+                <input type="text" id="cnic" name="cnic" maxlength="15" placeholder="XXXXX-XXXXXXX-X" required>
+              </div>
+              <div class="form-group">
+                <label for="cnic-picture">CNIC Picture</label>
+                <input type="file" id="cnic-picture" name="cnic-picture" accept="image/*" required>
+              </div>
+              <div class="form-group">
+                <label for="License number">License number</label>
+                <input type="text" id="License number" name="License number" maxlength="13" placeholder="XXXXX-XXXXXXX-X" required>
+              </div>
+              <div class="form-group">
+                <label for="license-picture">License picture</label>
+                <input type="file" id="license-picture" name="license-picture" accept="image/*" required>
+              </div>
+              <div class="form-group">
+                <label for="pickup-date">Pick-up Date</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="return-date" required>
+              </div>
+              <div class="form-group">
+                <label for="car-type">Car Type</label>
+                <select id="car-type" name="car-type" required>
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="hatchback">Hatchback</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+              </div>
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+    </section>
+<!--newsletter-->
+    <section class="newsletter">
+        <h2>Sunscribe To News Letter</h2>
+    <div class="box">
+        <input type="text" placeholder="Enter Your Email">
+        <a href="subscription.html" class="btn">Subscribe</a>
+    </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer" id="footer">
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Contact Us</h3>
+                    <p>Email:Info@example.com</p>
+                    <p>Phone:+92 329 4238189</p>
+                    <p>Address: Valencia Town,Lahore,Punjab</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                     <ul class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vehicle.html">Vehicle</a></li>
+                        <li><a href="book_now.html">Booking</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                     </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                     <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                     <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2024 Track Ontrack Rental . All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+    </html>

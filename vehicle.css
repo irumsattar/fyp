@@ -1,0 +1,126 @@
+.heading{
+    padding-top: 20px;
+padding-bottom:70px;
+}
+.service-container{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.service-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+
+}
+.service-container .box .box-img{
+    width: 100%;
+    height: 200px;
+}
+.service-container .box .box-img img{
+
+    width:100%;
+    height:100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+
+}
+.service-container .box p{
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    width: 58px;
+    margin: 1rem 0 1rem;
+}
+.service-container .box h3{
+    font-weight: 500;
+}
+.service-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 0.2rem 0 0.5rem;
+}
+.service-container .box span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.service-container .box .btn{
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.service-container .box .btn:hover{
+    background: var(--main-color);
+
+}
+/* Filter Section Styling */
+.filters {
+    padding: 70px;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#filterForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#filterForm label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#filterForm select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+#applyFilters {
+    padding: 10px 20px;
+    background-color: #474fa0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#applyFilters:hover {
+    background-color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    #filterForm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filterForm select {
+        width: 100%;
+    }
+
+    #applyFilters {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
